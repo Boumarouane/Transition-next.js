@@ -7,15 +7,15 @@ let easing = [0.6, -0.05, 0.01, 0.99];
 const stagger = {
   animate: {
     transition: {
-      staggerChildren: 0.05
+      staggerChildren: .001
     }
   }
 };
 
 const fadeInUp = {
   initial: {
-    y: 60,
-    opacity: 0,
+    y: 600,
+    opacity: 0.2,
     transition: { duration: 0.6, ease: easing }
   },
   animate: {
@@ -42,7 +42,7 @@ const Product = props => (
             animate={{ x: 0, opacity: 1 }}
             initial={{ x: 200, opacity: 0 }}
             exit={{ opacity: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.8 }}
           />
         </motion.div>
         <div className='product-details'>
